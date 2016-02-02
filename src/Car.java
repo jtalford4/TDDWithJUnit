@@ -52,4 +52,12 @@ public class Car {
 	public String toString(){
 		return("Color: " + color.toString() + ", Speed: " + Integer.toString(speed));
 	}
+	
+	/**
+	 * Decelerates the car (currently no lower limit)
+	 */
+	public void decelerate(int amountToDeclerate) {
+		speed -= amountToDeclerate;
+	}
+	
 }
