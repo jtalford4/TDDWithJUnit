@@ -54,10 +54,13 @@ public class Car {
 	}
 	
 	/**
-	 * Decelerates the car (currently no lower limit)
+	 * Decelerates the car
 	 */
 	public void decelerate(int amountToDeclerate) {
 		speed -= amountToDeclerate;
+		if (speed < 0){
+			speed = 0;
+		}
 	}
 	
 }
