@@ -56,8 +56,8 @@ public class Car {
 	/**
 	 * Decelerates the car
 	 */
-	public void decelerate(int amountToDeclerate) {
-		speed -= amountToDeclerate;
+	public void decelerate(int amountToDecelerate) {
+		speed -= amountToDecelerate;
 		if (speed < 0){
 			speed = 0;
 		}
